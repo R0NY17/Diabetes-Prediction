@@ -2,6 +2,25 @@ import streamlit as st
 import numpy as np
 import joblib
 
+st.set_page_config(page_title="Diabetes Prediction App", layout="centered")
+
+st.title("🩺 Diabetes Prediction App")
+st.markdown("""
+Welcome to the **Diabetes Prediction App**!  
+This tool uses a machine learning model trained on medical data to predict whether a person is likely to have diabetes.
+
+---
+
+### 📌 How It Works
+1. Enter the patient's health information in the form below.
+2. Click **Predict**.
+3. The app will tell you if the person is likely diabetic or not — based on the model's analysis.
+
+**Note**: This is a demo built with public data and is not intended for medical diagnosis.
+
+---
+""")
+
 # Load model and scaler
 model = joblib.load("models/random_forest_model.pkl")
 scaler = joblib.load("models/scaler.pkl")
