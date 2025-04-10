@@ -1,0 +1,16 @@
+# Ignore data and models
+data/
+models/
+
+# Ignore system files
+*.DS_Store
+__pycache__/
+.ipynb_checkpoints/
+
+# Environment and packages
+.env
+venv/
+*.pyc
+
+# Jupyter Notebook metadata
+*.ipynb_checkpoints
